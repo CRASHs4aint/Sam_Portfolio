@@ -70,10 +70,42 @@
       .text-gray {
         color: gray;
       }
+      .right-section{
+         width: 500px;
+      height: 500px;
+      overflow: hidden;
+     
+      border-radius: 20px;
+       box-shadow: 0 8px 16px rgba(94, 122, 183, 0.7);
+       animation: pulse 4s infinite ease-in-out;
+      }
       .right-section img {
         width: 500px;
+      height: 500px;
+         background-size: auto;
+        object-fit: cover;
+        width: 500px;
         margin: 50px 0;
+        animation: zoom 4s infinite ease-in-out;
       }
+       @keyframes zoom {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        box-shadow: 0 8px 16px rgba(94, 122, 183, 0.771);
+      }
+      50% {
+        box-shadow: 0 12px 24px rgba(94, 122, 183, 0.215);
+      }
+    }
+
       #element {
         color: rgb(140, 74, 202);
       }
