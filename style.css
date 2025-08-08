@@ -13,6 +13,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   background-color: rgb(18, 18, 62);
+  gap: 500px;
 }
 nav ul {
   display: flex;
@@ -31,6 +32,27 @@ nav ul li a:hover {
   color: rgb(153, 153, 226);
   font-size: 1.01rem;
 }
+.right hover-underline {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.right hover-underline::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transition: width 0.4s ease;
+}
+
+. right hover-underline:hover::after {
+  width: 100%;
+}
+
 main hr {
   border: 0;
   background: #9c97f1;
@@ -41,6 +63,7 @@ main hr {
   font-size: 1.5rem;
 }
 .first-section {
+  height: 600px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -107,9 +130,22 @@ first-section div {
   }
 }
 
-#element {
-  color: rgb(140, 74, 202);
+.line-animate {
+  width: 0;
+  height: 3px;
+ background-color: rgb(140, 74, 202); 
+  border: none;
+  animation: expandLine 2s ease forwards;
+  margin: 20px auto;
+
 }
+
+@keyframes expandLine {
+  to {
+    width: 80%;
+  }
+}
+
 .second-section {
   max-width: 80vw;
   margin: auto;
@@ -150,6 +186,18 @@ first-section div {
   color: gray;
   font-size: 9px;
 }
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* When visible */
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media screen and (max-width: 425px) {
   nav {
     max-width: 100vw;

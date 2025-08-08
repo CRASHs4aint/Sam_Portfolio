@@ -16,13 +16,14 @@
     <!-- here we are starting header tag -->
     <header>
       <nav>
-        <div class="left">Sam's Portfoilo</div>
+        <div class="left">
+          Sam's Portfoilo</div>
         <div class="right">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li ><a href="#">Home</a></li>
+            <li ><a href="#">About</a></li>
+            <li ><a href="#">Services</a></li>
+            <li ><a href="#">Contact Me</a></li>
           </ul>
         </div>
       </nav>
@@ -43,7 +44,7 @@
         </div>
       </section>
 
-      <hr />
+      <hr class="line-animate ">
 
       <section class="second-section">
         <span class="text-gray">What I have done so far</span>
@@ -55,10 +56,12 @@
             <br />
             <div class="vertical-title">Amazon Clone</div>
             <div class="vertical-desc">
-              I create Amazon Clone by Youtube reference(@Apna College) with
-              help of HTML and CSS.This Clone is not responsive (i will fix it
-              in upcoming days).Also this is my project so lots of things to
-              modify. Stay Tuned!
+              <p class="animate-on-scroll">
+                I create Amazon Clone by Youtube reference(@Apna College) with
+                help of HTML and CSS. This Clone is not responsive (i will fix
+                it in upcoming days).Also this is my project so lots of things
+                to modify. Stay Tuned!
+              </p>
             </div>
           </div>
 
@@ -67,9 +70,11 @@
             <br />
             <div class="vertical-title">Netflix Clone</div>
             <div class="vertical-desc">
-              With the help from Youtube (@Code With Harry),I made clone of
-              Netflix which is used to be responsive. Code is written in HTML
-              and CSS .
+              <p class="animate-on-scroll">
+                With the help from Youtube (@Code With Harry),I made clone of
+                Netflix which is used to be responsive. Code is written in HTML
+                and CSS .
+              </p>
             </div>
           </div>
 
@@ -78,9 +83,11 @@
             <br />
             <div class="vertical-title">Block Chain Web Application</div>
             <div class="vertical-desc">
-              Working on Block Chain Web Application which is design by @Mihir
-              Ranjan and Developed by me & @Som Anand. Design is avialable on
-              Figma.
+              <p class="animate-on-scroll">
+                Working on Block Chain Web Application which is design by @Mihir
+                Ranjan and Developed by me & @Som Anand. Design is avialable on
+                Figma.
+              </p>
             </div>
           </div>
 
@@ -89,9 +96,11 @@
             <br />
             <div class="vertical-title">Book my Show</div>
             <div class="vertical-desc">
-              This project is offcourse in future list.I will write in HTML ,CSS
-              and alongside javaScript.I will make without any reference or
-              help,just inspecting main website.
+              <p class="animate-on-scroll">
+                This project is offcourse in future list.I will write in HTML
+                ,CSS and alongside javaScript.I will make without any reference
+                or help,just inspecting main website.
+              </p>
             </div>
           </div>
 
@@ -100,8 +109,10 @@
             <br />
             <div class="vertical-title">Game Developer(In Future)</div>
             <div class="vertical-desc">
-              Want to develop game in future,this work is always sepecial for
-              me.Not for profession but for fun.
+              <p class="animate-on-scroll">
+                Want to develop game in future,this work is always sepecial for
+                me.Not for profession but for fun.
+              </p>
             </div>
           </div>
         </div>
@@ -150,12 +161,13 @@
     </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-    <!-- Setup and start animation! -->
+    <!-- Setup and start animate-on-scroll! -->
     <script>
       var typed = new Typed("#element", {
         strings: ["App Developer", "Web Designer", "Game Developer"],
         typeSpeed: 50,
       });
     </script>
+    <script src="app.js"></script>
   </body>
 </html>
